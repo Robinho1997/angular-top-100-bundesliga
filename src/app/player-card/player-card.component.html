@@ -1,13 +1,33 @@
-
-<div *ngFor="let player of players" class="w-[700px] my-5 bg-slate-200 rounded-xl">
+<div
+  *ngFor="let player of players"
+  class="w-[700px] my-5 bg-slate-200 rounded-xl"
+>
   <div class="flex-1 bg-slate-300 p-3 rounded-t-xl">
-    <span class="mr-5 text-4xl font-semibold">{{player.name}}</span>
-    <span class="text-2xl">{{player.club}}</span>
+    <span class="mr-5 text-4xl font-semibold">{{ player.name }}</span>
+    <span class="text-2xl">{{ player.club }}</span>
   </div>
   <div class="p-3">
     <p>
-     {{player.text}}
+      {{ player.text }}
     </p>
   </div>
+  <div class="flex justify-between gap-2 p-3">
+    <div class="flex gap-2">
+      <p class="flex gap-2">
+        <span class="material-symbols-outlined"> sports_soccer </span>
+        {{ player.goals }} |
+      </p>
+      <p class="flex gap-2">
+        <span class="material-symbols-outlined"> steps </span
+        >{{ player.assists }}
+      </p>
+    </div>
+    <div class="flex gap-2">
+      <p class="flex gap-2">
+        <span class="font-light">ALTER: </span>
+        <span class="font-bold">{{ player.age }}</span> |
+      </p>
+      <p class="flex gap-2"> <span class="font-light">MARKTWERT: </span> <span class="font-bold">{{ player.value }},00 Mio.€</span> 
+    </div>
+  </div>
 </div>
-
