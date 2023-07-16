@@ -13,3 +13,7 @@ span {
   letter-spacing: 0.03em;
   font-family: "Yellowtail", cursive;
 }
+
+img {
+  width: 400px;
+}
