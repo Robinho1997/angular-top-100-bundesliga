@@ -1,0 +1,15 @@
+h1 {
+  font-family: "Archivo", sans-serif;
+  text-align: center;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: rgb(255 121 31);
+}
+
+span {
+  font-size: 30px;
+  margin-top: 50px;
+  letter-spacing: 0.03em;
+  font-family: "Yellowtail", cursive;
+}
